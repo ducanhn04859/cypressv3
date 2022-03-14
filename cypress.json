@@ -1,0 +1,13 @@
+{
+  "ignoreTestFiles": ["**/1-getting-started/*", "**/2-advanced-examples/*"],
+  "pageLoadTimeout": 10000,
+  "defaultCommandTimeout": 8000,
+  "env": {
+    "url": "https://rahulshettyacademy.com/angularpractice/"
+  },
+  "projectId": "i5hap8",
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
+  }
+}

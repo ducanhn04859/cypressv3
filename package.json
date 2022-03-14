@@ -1,0 +1,33 @@
+{
+  "name": "cypressv2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "headTest": "npx cypress run --headed",
+    "chromeTest": "npx cypress run --browser chrome",
+    "recordDashboard": "npx cypress run --record --key eec91d89-b3e7-4ebf-bc1e-835183d2de5b",
+    "testProduct": "npx cypress run --spec \"cypress/integration/TestProduct/*\""
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "DucAnh",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.0",
+    "neat-csv": "5.1.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-iframe": "^1.0.1",
+    "multiple-cucumber-html-reporter": "^1.19.0"
+  }
+}
