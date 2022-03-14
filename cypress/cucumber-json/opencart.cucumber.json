@@ -1,0 +1,76 @@
+[
+  {
+    "description": "    open cart page",
+    "keyword": "Feature",
+    "name": "page Opencart test",
+    "line": 1,
+    "id": "page-opencart-test",
+    "tags": [],
+    "uri": "opencart.feature",
+    "elements": [
+      {
+        "id": "page-opencart-test;filling-register-form",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Filling register form",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open register opencart page",
+            "result": {
+              "status": "passed",
+              "duration": 754000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First Name",
+                      "Last Name",
+                      "email",
+                      "tel",
+                      "passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Duc Anh",
+                      "Nguyen",
+                      "ndanh9@cmcmglobal.vn",
+                      "0123456789",
+                      "123456"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I fill the form register",
+            "result": {
+              "status": "passed",
+              "duration": 1600000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "select submit and verify",
+            "result": {
+              "status": "passed",
+              "duration": 192000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

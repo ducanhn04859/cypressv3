@@ -22,10 +22,10 @@
   "author": "DucAnh",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.5.0",
     "neat-csv": "5.1.0"
   },
   "devDependencies": {
+    "cypress": "^9.5.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-iframe": "^1.0.1",
     "multiple-cucumber-html-reporter": "^1.19.0"
