@@ -1,0 +1,12 @@
+/target/
+/.idea/
+*.iml
+node_modules
+*/node_modules
+.vscode
+.settings
+.classpath
+.factorypath
+.project
+*/videos
+*/screenshots
