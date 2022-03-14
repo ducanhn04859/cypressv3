@@ -1,9 +1,21 @@
 {
-  "ignoreTestFiles": ["**/1-getting-started/*", "**/2-advanced-examples/*"],
   "pageLoadTimeout": 10000,
   "defaultCommandTimeout": 8000,
   "env": {
-    "url": "https://rahulshettyacademy.com/angularpractice/"
+    "url": "https://rahulshettyacademy.com/angularpractice/",
+    "baseURL":"http://192.168.66.111:8180/index.php?route=common/home",
+    "db": {
+      "host": "172.28.0.3",
+      "user": "dhieu",
+      "password": "",
+      "database": "opencart"
+    },
+    "ssh": {
+      "host": "192.168.66.111",
+      "port":"22",
+      "user": "sks_du8",
+      "privateKey": "x@jE8c2%"
+    }
   },
   "projectId": "i5hap8",
   "retries": {

@@ -9,21 +9,26 @@
     "uri": "opencart.feature",
     "elements": [
       {
-        "id": "page-opencart-test;filling-register-form",
+        "id": "page-opencart-test;add-new-account-direct-into-db-table",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Filling register form",
-        "tags": [],
+        "line": 13,
+        "name": "Add new account direct into DB table",
+        "tags": [
+          {
+            "name": "@RevertLogin",
+            "line": 12
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
-            "name": "I open register opencart page",
+            "line": 14,
+            "name": "I open login opencart page",
             "result": {
               "status": "passed",
-              "duration": 754000000
+              "duration": 780000000
             }
           },
           {
@@ -41,9 +46,9 @@
                   },
                   {
                     "cells": [
-                      "Duc Anh",
-                      "Nguyen",
-                      "ndanh9@cmcmglobal.vn",
+                      "Customer1",
+                      "Customer1Last",
+                      "test@cmcmglobal.vn",
                       "0123456789",
                       "123456"
                     ]
@@ -52,21 +57,32 @@
               }
             ],
             "keyword": "When ",
-            "line": 7,
-            "name": "I fill the form register",
+            "line": 15,
+            "name": "I create new account data into DB",
             "result": {
               "status": "passed",
-              "duration": 1600000000
+              "duration": 546000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I login check account",
+            "result": {
+              "status": "passed",
+              "duration": 719000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "select submit and verify",
+            "line": 19,
+            "name": "Verify login success",
             "result": {
-              "status": "passed",
-              "duration": 192000000
+              "status": "failed",
+              "duration": 8003000000,
+              "error_message": "AssertionError: Timed out retrying after 8000ms: expected 'http://192.168.66.111:8180/index.php?route=account/login' to include 'http://192.168.66.111:8180/index.php?route=account/account'\n    at Context.eval (http://192.168.66.111:8180/__cypress/tests?p=cypress/integration/demo/BDD/opencart.feature:144:12)\n    at Context.resolveAndRunStepDefinition (http://192.168.66.111:8180/__cypress/tests?p=cypress/integration/demo/BDD/opencart.feature:10651:29)\n    at Context.eval (http://192.168.66.111:8180/__cypress/tests?p=cypress/integration/demo/BDD/opencart.feature:9972:35)"
             }
           }
         ]
